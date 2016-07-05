@@ -13,7 +13,11 @@
  */
 // write your code here
 
+func helloWorld() {
+    print("Hello, World!")
+}
 
+helloWorld()
 
 
 /*: question2
@@ -21,7 +25,12 @@
  */
 // write your code here
 
+func myFunction() {
+    let name = "Cenker"
+    print("My name is \(name).")
+}
 
+myFunction()
 
 
 /*: question3
@@ -29,15 +38,24 @@
  */
 // write your code here
 
+func greetPerson(name: String) {
+    print("Hello, \(name)")
+}
 
+greetPerson("Hamit Topkaya")
 
 
 /*: question4
  ### 4. Now call the function you wrote in Question 3 using a variable or constant instead of a string literal. What do you expect to see in the console? Try passing in a _variable_ you declared (using `var`) as an argument. Then change that variable's value and call your function again. What do you see in the console?
  */
 // write your code here
+let newName = "Serafettin"
+greetPerson(newName)
 
-
+var gunaydin = "Erol"
+greetPerson(gunaydin)
+gunaydin = "Esref"
+greetPerson(gunaydin)
 
 
 /*: question5
@@ -45,8 +63,14 @@
  */
 // write your code here
 
-
-
+func anyVariable() {
+    var whatever = 34
+    print("\(whatever)")
+    whatever = 76858
+    print("\(whatever)")
+}
+anyVariable()
+anyVariable()
 
 /*:
  [Solution](solution)
